@@ -18,3 +18,10 @@
 <ul>
     <li *ngFor="let stud of students">{{stud.display()}}</li>
 </ul>
+
+<!-- ngSwitch is a switch case  -->
+<ul [ngSwitch]="countryCode">
+    <li *ngSwitchCase="'USA'">United States of America</li>
+    <li *ngSwitchCase="'IND'">India</li>
+    <li *ngSwitchDefault>Select Correct Country Code</li>
+</ul>
