@@ -11,4 +11,6 @@ export class NgIfDemoComponent {
    show:boolean = false
    heading1:string = "Hi Welcome to Angular !"
    heading2:string = "Angular is too easy .."
+
+   subjects:string[] = ["C prog", "DSA", "OOP", "DBMS", "Java"]
 }
