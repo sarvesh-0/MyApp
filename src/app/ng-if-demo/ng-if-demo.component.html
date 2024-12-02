@@ -1,0 +1,11 @@
+<p>ng-if-demo works!</p>
+{{show}}
+
+<h1 *ngIf="show; else ElseDiv" class="red">
+    {{heading1}}
+</h1>
+<ng-template #ElseDiv>
+    <h2 class="blue">
+        {{heading2}}
+    </h2>
+</ng-template>
