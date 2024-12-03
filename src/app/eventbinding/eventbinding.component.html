@@ -1,0 +1,35 @@
+<div align="center">
+    <h5>Event Binding Example :</h5>
+
+    <button (click)="DisplayMessage()">Hit It !!</button>
+    <br><br>
+    <h3 style="color: blue;">{{result}}</h3>
+</div>
+<br><br><br><br>
+<div align="center">
+    <input type="text" name="firstname" #fnm placeholder="Enter First Name"/>
+    <input type="text" name="lastname" #lnm placeholder="Enter Last Name"/>
+    <button (click)="DisplayDetails(fnm.value,lnm.value)">Click Me</button>
+    <h3 style="color: darkred;">{{x}}</h3>
+</div>
+<br><br><br><br>
+<div align="center">
+    <input [value]="var1" (input)="handleInput($event)">
+    <h3>Entered Value = {{var1}}</h3>
+</div>
+
+<div align="center">
+    <input type="text" name="firstno" #fn placeholder="Enter First Number"/>
+    <input type="text" name="secondno" #sn placeholder="Enter Last Number"/>
+    <table>
+        <tr>
+            <td><button (click)="add(+fn.value,+sn.value)">Addition</button></td>
+            <td><button (click)="sub(+fn.value,+sn.value)">Subtraction</button></td>
+        </tr>
+        <tr>
+            <td><button (click)="mul(+fn.value,+sn.value)">Multiplication</button></td>
+            <td><button (click)="div(+fn.value,+sn.value)">Division</button></td>
+        </tr>
+    </table> 
+    <input [value]="ans"/>
+</div>

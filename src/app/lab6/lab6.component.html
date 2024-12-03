@@ -1,0 +1,28 @@
+<p>lab6 works!</p>
+<table width="100%" border="2">
+    <tr>
+        <th>RegNo</th>
+        <th>FullName</th>
+        <th>Birth Date</th>
+        <th>Gender</th>
+        <th>Degree</th>
+        <th>Percentage</th>
+    </tr>
+    <tbody *ngFor="let s of s1">
+        <tr>
+            <td>{{s.RegNo}}</td>
+            <td>{{s.FullName|titlecase}}</td>
+            <td>{{s.BirthDate|date:"dd/MM/yyyy"}}</td>
+            <td>{{s.Gender|titlecase}}</td>
+            <td>{{s.Degree|uppercase}}</td>
+            <td>{{s.Percentage|number:"1.1"}}</td>
+        </tr>
+    </tbody>
+</table>
+
+<br>
+<br>
+{{name|welcome}}
+<br>
+<br>
+{{n|nthpower}}
