@@ -1,5 +1,5 @@
 <p>orders works!</p>
-<table cellpadding="5" border="1">
+<table cellpadding="5" border="1" width = "100%">
     <tr>
         <th>Order Id</th>
         <th>Order Date</th>
@@ -8,21 +8,21 @@
         <th>Order From</th>
     </tr>
     <tbody *ngFor="let o of oderarray" [ngSwitch]="o.orderStatus">
-        <tr *ngSwitchCase="'pending'" class="red">
+        <tr *ngSwitchCase="'pending'"  [ngClass]="['red']">
             <td>{{o.orderId}}</td>
             <td>{{o.orderDate}}</td>
             <td>{{o.orderStatus}}</td>
             <td>{{o.deliveryCountry}}</td>
             <td>{{o.orderFrom}}</td>
         </tr>
-        <tr *ngSwitchCase="'onTheWay'" class="yellow">
+        <tr *ngSwitchCase="'onTheWay'"  [ngClass]="['yellow']">
             <td>{{o.orderId}}</td>
             <td>{{o.orderDate}}</td>
             <td>{{o.orderStatus}}</td>
             <td>{{o.deliveryCountry}}</td>
             <td>{{o.orderFrom}}</td>
         </tr>
-        <tr *ngSwitchCase="'delivered'" class="green">
+        <tr *ngSwitchCase="'delivered'"  [ngClass]="['green']">
             <td>{{o.orderId}}</td>
             <td>{{o.orderDate}}</td>
             <td>{{o.orderStatus}}</td>

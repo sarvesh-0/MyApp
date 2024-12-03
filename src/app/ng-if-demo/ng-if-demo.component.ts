@@ -19,4 +19,6 @@ export class NgIfDemoComponent {
 
   //  cCode:string[]=["USA","IND"]
   countryCode:string="USA"
+  changeColor:string="red"
+  txt:string="Enter First Name"
 }

@@ -1,0 +1,28 @@
+<table width="100%" border="2">
+    <tr>
+        <th>Sr.NO</th>
+        <th>Course Name</th>
+        <th>Technology</th>
+        <th>Fees</th>
+        <th>Duration</th>
+        <th>Fees Status</th>
+    </tr>
+    <tbody *ngFor="let w of wrkarray" [ngSwitch]="w.feesStatus">
+        <tr *ngSwitchCase="'pending'" [ngClass]="['red']">
+            <td>{{w.srNo}}</td>
+            <td>{{w.courseName}}</td>
+            <td>{{w.tech}}</td>
+            <td>{{w.fees}}</td>
+            <td>{{w.duration}}</td>
+            <td>{{w.feesStatus}}</td>
+        </tr>
+        <tr *ngSwitchCase="'complete'" [ngClass]="['green']">
+            <td>{{w.srNo}}</td>
+            <td>{{w.courseName}}</td>
+            <td>{{w.tech}}</td>
+            <td>{{w.fees}}</td>
+            <td>{{w.duration}}</td>
+            <td>{{w.feesStatus}}</td>
+        </tr>
+    </tbody>
+</table>

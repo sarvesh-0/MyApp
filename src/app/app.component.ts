@@ -4,10 +4,11 @@ import { FirstComponentComponent } from './first-component/first-component.compo
 import { SecondComponent } from './second/second.component';
 import { NgIfDemoComponent } from './ng-if-demo/ng-if-demo.component';
 import { OrdersComponent } from './orders/orders.component';
+import { WorkshopComponent } from './workshop/workshop.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,NgIfDemoComponent,OrdersComponent],
+  imports: [RouterOutlet,NgIfDemoComponent,OrdersComponent,WorkshopComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
