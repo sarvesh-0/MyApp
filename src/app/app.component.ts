@@ -8,10 +8,12 @@ import { WorkshopComponent } from './workshop/workshop.component';
 import { PipeDemoComponent } from './pipe-demo/pipe-demo.component';
 import { EventbindingComponent } from './eventbinding/eventbinding.component';
 import { Lab6Component } from './lab6/lab6.component';
+import { ParentComponent } from './parent/parent.component';
+import { DirectivedemoComponent } from './directivedemo/directivedemo.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet,Lab6Component],//,NgIfDemoComponent,OrdersComponent,WorkshopComponent,PipeDemoComponent
+  imports: [RouterOutlet,Lab6Component,ParentComponent,DirectivedemoComponent],//,NgIfDemoComponent,OrdersComponent,WorkshopComponent,PipeDemoComponent
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
