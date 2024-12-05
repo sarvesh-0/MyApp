@@ -1,0 +1,8 @@
+fieldset{
+    background-color: rgb(186, 238, 255);
+    width: 40%;
+    padding: 20px;
+}
+span{
+    font-weight: bolder;
+}

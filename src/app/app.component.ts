@@ -11,10 +11,11 @@ import { Lab6Component } from './lab6/lab6.component';
 import { ParentComponent } from './parent/parent.component';
 import { DirectivedemoComponent } from './directivedemo/directivedemo.component';
 import { ParenteventComponent } from './parentevent/parentevent.component';
+import { Lab46Component } from './lab4-6/lab4-6.component';
 
 @Component({
   selector: 'app-root',
-  imports: [ParenteventComponent],//,NgIfDemoComponent,OrdersComponent,WorkshopComponent,PipeDemoComponent,RouterOutlet,Lab6Component,ParentComponent,DirectivedemoComponent,
+  imports: [ParenteventComponent,Lab46Component],//,NgIfDemoComponent,OrdersComponent,WorkshopComponent,PipeDemoComponent,RouterOutlet,Lab6Component,ParentComponent,DirectivedemoComponent,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
